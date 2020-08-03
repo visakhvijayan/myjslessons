@@ -26,3 +26,6 @@ console.log(visakh);
 console.log(visakh.hasOwnProperty("getAge"));
 console.log(visakh.hasOwnProperty("firstName"));
 console.log(visakh.hasOwnProperty("firstname"));
+function test() {
+  console.log("Hey this is a test print");
+}
