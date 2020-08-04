@@ -15,7 +15,12 @@ class Customer extends Person {
     this.phone = phone;
     this.dob = dob;
   }
+
+  static getMemebershipCost() {
+    return 500;
+  }
 }
 
 const visakh = new Customer("Visakh", "Vijayan", 123456789, "03-jun-1991");
 console.log(visakh.greeting());
+console.log(Customer.getMemebershipCost());
