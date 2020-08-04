@@ -1,0 +1,37 @@
+Async Code
+# There are a few ways to work with Async code
+1. Callbacks
+2. Promises
+3. Async/Await
+
+Ajax :  Asynchronous JS & XML
+# It isn't language /framework/ library
+# It is a set of web technologies to send and recieve the data from the CLIENT and SERVER asynchronously.
+# Does not intefere with the current page
+# JSON has replaced XML for the most part
+# Make async requests in the background
+# No page reload / refresh need for updating a part in the web page
+
+        
+         JS call               Xml /Http Req (XHR)
+CLIENT ------------> AJAX Engine ----------------> SERVER
+
+
+        HTML Response                Xml /JSON
+CLIENT <------------ AJAX Engine <---------------- SERVER
+
+CORS enabled : We request their API evnthough we are not in the same domain. But some API need authenticaion.
+
+XHR : XMlHttpREquest
+# Core tech in AJAX
+# API in the form of an object
+# Provided by the browsers JS envioornment
+# Methods transfer data between client & Sever or Browser & Server
+# Can be used wit other protocols other than HTTP
+# Can work with data other than XML (JSON , plain text)
+# Libraries & Other Methods to use API request
+> Fetch API (Aprt of Vanila JS)
+> Axios (External Lib)
+> Superagent (External Lib)
+> jQuery (Not recommended)
+> Node HTTP (Nice if you are using node js)
