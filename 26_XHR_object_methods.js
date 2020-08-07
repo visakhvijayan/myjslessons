@@ -5,7 +5,7 @@ function loadData() {
   const xhr = new XMLHttpRequest();
   console.log(xhr.readyState);
   //OPEN
-  xhr.open("GET", "data.txt", true); // (type of req , URL/File,Synch bool )
+  xhr.open("GET", "26_data.txt", true); // (type of req , URL/File,ASynch( (bool) )
   //console.log(xhr.readyState);
 
   xhr.onload = function () {

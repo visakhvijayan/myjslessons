@@ -1,0 +1,52 @@
+// Rsource : https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/#:~:text=It%20is%20a%20set%20of,when%20they%20create%20their%20API.
+
+ API : 
+ Application Programming Interface. Many devices with different types of API
+ Contract provided by one software to another.Structured request and response */
+
+ 
+ REST APIS
+REST : Representation State Transfer
+REST Determines how the API looks like. It is a set of rules that developer follows when they create their API.
+
+Each URL is called a request while the data sent back to you is called a response.
+
+It’s important to know that a request is made up of four things:
+
+1. The endpoint
+2. The method
+3. The headers
+4. The data (or body)
+
+1 End point : 
+    The endpoint (or route) is the url you request for. It follows this structure:
+
+    root-endpoint/?
+
+    The root-endpoint is the starting point of the API you’re requesting from
+
+    ex: https://www.smashingmagazine.com/tag/javascript/
+
+    https://www.smashingmagazine.com/ is the root-endpoint and /tag/javascript is the path.
+
+    ex: /users/:username/repos
+
+    Any colons (:) on a path denotes a variable. You should replace these values with actual values of when you send your request.
+
+    Query parameters give you the option to modify your request with key-value pairs. They always begin with a question mark (?). Each parameter pair is then separated with an ampersand (&), 
+
+    ex : ?query1=value1&query2=value2
+
+2.The Method
+
+    The method is the type of request you send to the server. You can choose from these five types below:
+
+    GET
+    POST
+    PUT
+    PATCH
+    DELETE
+
+3.The Headers
+
+    Headers are used to provide information to both the client and server. It can be used for many purposes, such as authentication and providing information about the body content.
