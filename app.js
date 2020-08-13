@@ -1,40 +1,25 @@
-document.getElementById("button1").addEventListener("click", getText);
+// One line returns
+const sayHello = () => "Say Hello";
+// Same as above
+const sayHelloDup = () => {
+  return "Say Hello 2";
+};
+const sayHelloNum = (num) => {
+  console.log(`Say hello  ${num}`);
+};
 
-document.getElementById("button2").addEventListener("click", getJSON);
+// Sungle param no need for paranthesis
+// const sayHelloNumDup = num => {
+//   console.log(`Say hello  ${num}`);
+// };
+console.log(sayHello());
+console.log(sayHelloDup());
+sayHelloNum(3);
 
-document.getElementById("button3").addEventListener("click", getExternal);
+const users = ["visakh", "kavya", "kichu"];
+// Map vs for each
+// forEach: This iterates over a list and applies some operation with side effects to each list member (example: saving every list item to the database)
 
-function getText() {
-  //fetch return promises inorder to collect the return from prom9ise you have to use the then
-  fetch("test.txt")
-    .then((res) => res.text())
-    .then((data) => (document.getElementById("output").innerHTML = data))
-    .catch((err) => console.log("Error :" + err));
-}
-
-function getJSON() {
-  //fetch return promises inorder to collect the return from prom9ise you have to use the then
-  fetch("posts.json")
-    .then((res) => res.json())
-    .then((data) => {
-      let output = "";
-      data.forEach((post) => {
-        output += `<li>${post.title}</li>`;
-      });
-      document.getElementById("output").innerHTML = output;
-    });
-}
-
-function getExternal() {
-  //fetch return promises inorder to collect the return from prom9ise you have to use the then
-
-  fetch("https://api.github.com/users")
-    .then((res) => res.json())
-    .then((data) => {
-      let output = "";
-      data.forEach((user) => {
-        output += `<li>${user.login}</li>`;
-      });
-      document.getElementById("output").innerHTML = output;
-    });
-}
+// map: This iterates over a list, transforms each member of that list, and returns another list of the same size with the transformed members (example: transforming list of strings to uppercase)
+const nameLengths = users.map((name) => name.length);
+console.log(nameLengths);

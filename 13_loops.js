@@ -1,5 +1,9 @@
 const userNames = ["Name1", "Name2", "Name3", "Name4"];
 // ForEach
+
+// forEach: This iterates over a list and applies some operation with side effects to each list member (example: saving every list item to the database)
+
+// map: This iterates over a list, transforms each member of that list, and returns another list of the same size with the transformed members (example: transforming list of strings to uppercase)
 userNames.forEach(function (item, index, actualArray) {
   // Can take upto 3 values
   console.log(item);
