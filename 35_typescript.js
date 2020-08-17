@@ -1,3 +1,4 @@
 // Super set of JS
-// Compile to plain JS since browser can read only the JS
-// Static type checking (we  )
+// TSC (Type scripot compiler)Compile to plain JS since browser can read only the JS
+// Static type checking
+// Class based objects
